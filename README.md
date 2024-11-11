@@ -1,14 +1,14 @@
 C++ CONTENT 
                                                                     INDEX
-1.LINE NO.31 = NOTES 
-2.LINE NO.35 = DATATYPES 
-3.LINE NO.55 = VARIABLE SCOPE (LOCAL VARIABLE & GLOBAL VARIABLE)
-4.LINE NO.95 = THE SUM OF TWO NUMBERS PROGRAM
-5.LINE NO.118 = THE ARITHMETIC OPERATORS IN C++
-6.LINE NO.165 = SCOPE RESOLUTION OPERATOR IN C++
+1.LINE NO.32 = NOTES 
+2.LINE NO.36 = DATATYPES 
+3.LINE NO.56 = VARIABLE SCOPE (LOCAL VARIABLE & GLOBAL VARIABLE)
+4.LINE NO.96 = THE SUM OF TWO NUMBERS PROGRAM
+5.LINE NO.119 = THE ARITHMETIC OPERATORS IN C++
+6.LINE NO.166 = SCOPE RESOLUTION OPERATOR IN C++
 7.LINE NO.195 = USE OF SIZE OF FLOAT(f), LONG AND DOUBLE(d) LITERALS.
-
-
+8.LINE NO.224 = REFERENCE VARIABLE 
+9.LINE NO.244 = TYPECASTING
 
 
 
@@ -216,5 +216,57 @@ int main (){
  
     return 0;
 }
+
+
+
+
+
+*******************************************************************REFERENCE VARIABLE****************************************************************************************
+#include<iostream>
+using namespace std;
+
+int main (){
+
+//kapil = k = captain america     
+int a = 5;
+int & b = a;//here & is used so that b does not make its own memory location.
+
+cout << "the value of a is "<<a<<endl;
+cout << "the value of b is "<<b;
+
+    return 0;
+}
+
+
+
+
+
+******************************************************************************TYPE CASTING***********************************************************************************
+#include<iostream>
+using namespace std;
+
+
+int main (){
+int a = 5;
+float b = 5.433;
+
+//YOU CAN TAKE ANY ONE IN BRACKET.
+cout << "the value of a is "<<(float)a<<endl;
+cout << "the value of b is "<<(int)b<<endl;
+
+cout << "the value of a is "<<float(a)<<endl;
+cout << "the value of b is "<<int(b)<<endl;
+
+int c = int(b);
+
+cout << "THE EXPRESSION IS "<<a+b<<endl;
+cout << "THE EXPRESSION IS "<<a+int(b)<<endl;
+cout << "THE EXPRESSION IS "<<a+(int)b<<endl;
+
+
+    return 0;
+}
+
+
 
 
