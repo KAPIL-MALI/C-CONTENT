@@ -5,7 +5,7 @@ C++ CONTENT
 3.LINE NO.55 = VARIABLE SCOPE (LOCAL VARIABLE & GLOBAL VARIABLE)
 4.LINE NO.95 = THE SUM OF TWO NUMBERS PROGRAM
 5.LINE NO.118 = THE ARITHMETIC OPERATORS IN C++
-
+6.LINE NO.
 
 
 
@@ -115,12 +115,14 @@ int main (){
 
 
 
-ARITHMETIC OPERATORS IN C++
+DIFFERENT TYPES OF OPERATORS
 #include <iostream>
 using namespace std;
 int main() {
     
     int A = 6,B = 5;
+    
+    cout << "FOLLOWING ARE THE TYPES OF ARITHMETIC OPERATORS"<<endl;
     cout << "THE VALUE OF THE A + B IS "<< A+B << endl;
     cout << "THE VALUE OF THE A - B IS "<< A-B << endl;
     cout << "THE VALUE OF THE A * B IS "<< A*B << endl;
@@ -132,7 +134,27 @@ int main() {
     cout << "THE VALUE OF THE ++A IS "<< ++A << endl;//output7+1= 8
     cout << "THE VALUE OF THE A-- IS "<< A-- << endl;//output8 -1=7
     cout << "THE VALUE OF THE --A IS "<< --A << endl;//output7-1= 6
+    cout << endl;
     
+    //ASSIGNMENT OPERATORS -> ARE USED TO ASSIGN VALUES IN THE VARIABLES
+    //int a = 5,b = 4;
+    //int c = 'k';
+    
+    //COMPARISON OPERATORS
+    cout << "FOLLOWING ARE THE TYPES OF COMPARISON OPERATORS"<<endl;
+    cout << "THE VALUE OF A==B IS "<< (A==B) << endl;
+    cout << "THE VALUE OF A!=B IS "<< (A!=B) << endl;
+    cout << "THE VALUE OF A<B IS "<< (A<B) << endl;
+    cout << "THE VALUE OF A>B IS "<< (A>B) << endl;
+    cout << "THE VALUE OF A<=B IS "<< (A<=B) << endl;
+    cout << "THE VALUE OF A>=B IS "<< (A>=B) << endl;
+    cout << endl;
+    
+    cout << "FOLLOWING ARE THE TYPES OF LOGICAL OPERATORS"<<endl;
+    cout << "THE VALUE OF AND OPERATOR IS "<< ((A==B) && (A<B)) << endl;
+    cout << "THE VALUE OF OR OPERATOR IS "<< ((A==B) || (A>B)) << endl;
+    cout << "THE VALUE OF NOT OPERATOR IS "<< (!(A==B)) << endl;
+  
     return 0;
 }
 
