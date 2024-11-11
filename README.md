@@ -6,12 +6,12 @@ C++ CONTENT
 4.LINE NO.96 = THE SUM OF TWO NUMBERS PROGRAM
 5.LINE NO.119 = THE ARITHMETIC OPERATORS IN C++
 6.LINE NO.166 = SCOPE RESOLUTION OPERATOR IN C++
-7.LINE NO.195 = USE OF SIZE OF FLOAT(f), LONG AND DOUBLE(d) LITERALS.
+7.LINE NO.195 = USE OF SIZE OF FLOAT(f), LONG AND DOUBLE(d) LITERALS
 8.LINE NO.224 = REFERENCE VARIABLE 
 9.LINE NO.244 = TYPECASTING
-
-
-
+10.LINE NO.273 = CHAR EXAMPEL OF REFERENCE VARIABLE,const keyword
+11.LINE NO.299 = MANIPULATORS setw -> (iomanip)
+12.LINE NO.326 = OPERATOR PRESEDENCE AND ASSOCIATIVITY
 
 
 
@@ -263,9 +263,89 @@ cout << "THE EXPRESSION IS "<<a+b<<endl;
 cout << "THE EXPRESSION IS "<<a+int(b)<<endl;
 cout << "THE EXPRESSION IS "<<a+(int)b<<endl;
 
-
     return 0;
 }
+
+
+
+
+
+***********************************************************CHAR EXAMPLE OF THE REFERENCE VARIABLE****************************************************************************
+*********************************************************************const keyword:******************************************************************************************
+Makes the variable a constant, so its value cannot be changed once it’s initialized.
+Data types: You can use const with any data type (int, float, double, bool, char, etc.).
+
+#include <iostream>
+using namespace std;
+
+int main (){
+
+    //NOTE:YOU CAN USE THIS FOR FLOAT ALSO
+    //NOTE: IF VARIABLE IS DECLARED IN SUCH A WAY THAT 
+    //const int a = 5;
+    char C = 'C';
+    cout <<"THE VALUE OF C IS "<<C<<endl;
+    C = '4';
+    a = 7;//this line will not work and error will occur.
+    cout <<"THE VALUE OF C IS "<<C;
+    
+    return 0;
+}
+
+
+
+
+
+******************************************************************MANIPULATORS -> setw(iomanip)******************************************************************************
+#include <iostream>
+#include <iomanip>
+using namespace std;
+
+int main (){
+
+    int A = 5;
+    int B = 34;
+    int C = 3433;
+    
+    cout << "THE VALUE OF A IS WITHOUT setw "<<A<<endl;
+    cout << "THE VALUE OF B IS WITHOUT setw "<<B<<endl;
+    cout << "THE VALUE OF C IS WITHOUT setw "<<C<<endl;
+    cout << endl;
+    
+    cout << "THE VALUE OF A WITH setw "<<setw(4)<<A<<endl;
+    cout << "THE VALUE OF B WITH setw "<<setw(4)<<B<<endl;
+    cout << "THE VALUE OF C WITH setw "<<setw(4)<<C<<endl;
+    //MANIPULATORS:setw -> iomanip , endl -> iostream.
+    //SO WE LEARNT THAT setw IS USED TO TAKE SPACES ACCORDING TO OUT NEED IF THE NUMBERS LESS THEN IT WILL CREATE SPACES BUT THE COMMOND WILL STILL BE FOLLOWED,AND THIS COMES WITH THE iomanip HEADER FILE.
+    return 0;
+
+
+
+
+
+*************************************************************OPERATOR PRESEDENCE AND ASSOCIATIVITY***************************************************************************
+}
+[C++_Operator_Precedence_and_Associativity_Chart_Corrected.pdf](https://github.com/user-attachments/files/17704732/C%2B%2B_Operator_Precedence_and_Associativity_Chart_Corrected.pdf)
+
+CODE 
+
+#include <iostream>
+#include <iomanip>
+using namespace std;
+
+int main (){
+
+    int A = 5;
+    int B = 6;
+    int C = 3;
+    
+    cout <<"THE SOLUTION OF THE EQUATION IS "<<((((A*B)+C)-A)+B);
+    
+    return 0;
+}
+
+
+
 
 
 
