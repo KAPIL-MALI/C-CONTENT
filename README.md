@@ -317,18 +317,36 @@ int main (){
     cout << "THE VALUE OF C WITH setw "<<setw(4)<<C<<endl;
     //MANIPULATORS:setw -> iomanip , endl -> iostream.
     //SO WE LEARNT THAT setw IS USED TO TAKE SPACES ACCORDING TO OUT NEED IF THE NUMBERS LESS THEN IT WILL CREATE SPACES BUT THE COMMOND WILL STILL BE FOLLOWED,AND THIS COMES WITH THE iomanip HEADER FILE.
-    return 0;
+    return 0;}
 
 
 
 
 
 *************************************************************OPERATOR PRESEDENCE AND ASSOCIATIVITY***************************************************************************
-}
-[C++_Operator_Precedence_and_Associativity_Chart_Corrected.pdf](https://github.com/user-attachments/files/17704732/C%2B%2B_Operator_Precedence_and_Associativity_Chart_Corrected.pdf)
 
-CODE 
 
+
+C++ Operator Precedence and Associativity Chart
+Precedence	               Operator(s)	                                                          Description                                           Associativity
+1	                         ::	                                                                    Scope resolution	                                    Left-to-right
+2	                         ++, --, +, -, !, ~, *, &, sizeof, typeid, new, delete	                Unary operators	                                      Right-to-left
+3	                         .*, ->*	                                                              Pointer-to-member	                                    Left-to-right
+4	                         *, /, %	                                                              Multiplication, division, modulus	                    Left-to-right
+5                        	 +, -	                                                                  Addition, subtraction	                                Left-to-right
+6	                         <<, >>	                                                                Bitwise shift	                                        Left-to-right
+7	                         <, <=, >, >=	                                                          Relational operators	                                Left-to-right
+8	                         ==, !=	                                                                Equality operators	                                  Left-to-right
+9	                         &	                                                                    Bitwise AND	                                          Left-to-right
+10	                       ^	                                                                    Bitwise XOR	                                          Left-to-right
+11	                       `                                                                      `                                                     Bitwise OR
+12	                       &&	                                                                    Logical AND	                                          Left-to-right
+13	                       `		                                                                                                                        `
+14                      	 ?:	                                                                    Ternary conditional	                                  Right-to-left
+15	                       =, +=, -=, *=, /=, %=, <<=, >>=, &=, ^=, `	                            =`	                                                  Assignment operators
+16	                       ,	                                                                    Comma operator	                                      Left-to-right
+
+EXAMPLE
 #include <iostream>
 #include <iomanip>
 using namespace std;
