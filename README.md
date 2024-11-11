@@ -5,7 +5,8 @@ C++ CONTENT
 3.LINE NO.55 = VARIABLE SCOPE (LOCAL VARIABLE & GLOBAL VARIABLE)
 4.LINE NO.95 = THE SUM OF TWO NUMBERS PROGRAM
 5.LINE NO.118 = THE ARITHMETIC OPERATORS IN C++
-6.LINE NO.
+6.LINE NO.165 = SCOPE RESOLUTION OPERATOR IN C++
+7.LINE NO.195 = USE OF SIZE OF FLOAT(f), LONG AND DOUBLE(d) LITERALS.
 
 
 
@@ -32,7 +33,7 @@ NOTE: CTRL + / = COMMENT UNCOMMENT
 NOTE: VARIABLE DECLARED INSIDE A FUNCTION IS A LOCAL VARIABLEL.
 
 
-THERE ARE THREE TYPES OF DATA TYPES 
+*****************************************************************THERE ARE THREE TYPES OF DATA TYPES*************************************************************************
 1.USER DEFINED DATA TYPE
 *Struct
 ~ Union
@@ -52,7 +53,7 @@ understanding that these are the derived defined data types should do!
 
 
 
-VARIABLE SCOPE 
+*****************************************************************************VARIABLE SCOPE********************************************************************************* 
 SCOPE: scope of a variable is the region in the code where the existence of a variable is valid.
 ON THE BASIS OF SCOPE THE VARIABLE IS OF TWO TYPES 
 1.LOCAL VARIABLES: Local variables are declared inside the braces of any
@@ -92,7 +93,7 @@ int main() {
 
 
 
-THE SUM OF TWO NUMBERS PROGRAM
+**********************************************************************THE SUM OF TWO NUMBERS PROGRAM*************************************************************************
 #include <iostream>
 using namespace std;
 int main (){
@@ -115,7 +116,7 @@ int main (){
 
 
 
-DIFFERENT TYPES OF OPERATORS
+*********************************************************************DIFFERENT TYPES OF OPERATORS***************************************************************************
 #include <iostream>
 using namespace std;
 int main() {
@@ -157,4 +158,63 @@ int main() {
   
     return 0;
 }
+
+
+
+
+
+*****************************************************************SCOPE RESOLUTION OPERATOR*********************************************************************************
+#include<iostream>
+using namespace std;
+int C = 7;
+
+int main (){
+    
+    int A;
+    int B;
+    int C;
+    
+    cout << "ENTER THE VALUE OF A: "<<endl;
+    cin >> A;
+    cout << "ENTER THE VALUE OF B: "<<endl;
+    cin >> B;
+    
+    C = A+B;
+    cout << "THE VALUE OF C IS "<<C<<endl;
+    
+    // IF YOU WANT TO ADD OR CALL THE GLOBAL C THEN USE THIS SCOPE RESOLUTION OPERATOR i.g. ::C;
+    cout << "THE VALUE OF GLOBAL C IS "<<::C;
+    
+    return 0;
+}
+
+
+
+
+
+********************************************************USE OF SIZE OF FLOAT , LONG AND , DOUBLE LITERALS.*************************************************************
+#include<iostream>
+using namespace std;
+int C = 7;
+
+int main (){
+    
+    //f(F) and l(L) suffixes are used to let the compiler know that in what form the value 3.14 has been used.
+    //otherwise by default the number is always double.
+    
+    float A = 3.14f;
+    long double B = 3.14L;
+ 
+ cout << "THE VALUE OF A IS " <<A<<endl<<"THE VALUE OF B IS "<<B;
+ cout << endl;
+  
+ cout << "THE SIZE OF 3.14 IS "<<sizeof(3.14)<<endl;
+ cout << "THE SIZE OF 3.14f IS "<<sizeof(3.14f)<<endl;
+ cout << "THE SIZE OF 3.14F IS "<<sizeof(3.14F)<<endl;
+ cout << "THE SIZE OF 3.14l IS "<<sizeof(3.14l)<<endl;
+ cout << "THE SIZE OF 3.14L IS "<<sizeof(3.14L)<<endl;
+ 
+    return 0;
+}
+
 
