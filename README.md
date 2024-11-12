@@ -12,7 +12,7 @@ C++ CONTENT
 10.LINE NO.273 = CHAR EXAMPEL OF REFERENCE VARIABLE,const keyword
 11.LINE NO.299 = MANIPULATORS setw -> (iomanip)
 12.LINE NO.326 = OPERATOR PRESEDENCE AND ASSOCIATIVITY
-
+13.LINE NO.369 = CONTROL STATEMENTS(TYPES AND DIFFERENCE BETWEEN if-else and switch case statements)
 
 
 
@@ -366,5 +366,17 @@ int main (){
 
 
 
+CONTROL STATEMENTS 
+THEY ARE OF THREE TYPES 
+1.SEQUENCE CONTROL STRUCTURE.
+2.SELECTION STRUCTURE.
+3.LOOP STRUCTURE.
 
+1.SELECTION CONTROL STRUCTURE  INSIDE THE PROGRAM
+1.if-else statement
+2.if-else ladder
+3.switch
 
+DIFFERENCE BETWEEN if-else and switch case statements
+if-else: Use for complex or range-based conditions; it's highly flexible but can become less readable with complexity.
+switch: Use for distinct values of a single variable; it's efficient and readable for well-defined cases but lacks the flexibility of if-else.
