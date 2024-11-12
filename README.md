@@ -13,7 +13,7 @@ C++ CONTENT
 11.LINE NO.299 = MANIPULATORS setw -> (iomanip)
 12.LINE NO.326 = OPERATOR PRESEDENCE AND ASSOCIATIVITY
 13.LINE NO.369 = CONTROL STATEMENTS(TYPES AND DIFFERENCE BETWEEN if-else and switch case statements)
-14.LINE NO.388 = TYPES OF LOOPS 
+14.LINE NO.388 = TYPES OF LOOPS(ALL THREE NICELY EXPLAINED)
 
 
 
@@ -389,7 +389,7 @@ switch: Use for distinct values of a single variable; it's efficient and readabl
 THERE ARE THREE TYPES OF LOOPS 
 1.FOR LOOP
 2.WHILE LOOP
-3.DO WHILE LOOP
+3.DO WHILE LOOP(it is the loop which works at least once)
 
 /* for (initialization ; condition ; operation){
        loop body (c++ code) */
@@ -407,3 +407,115 @@ int main (){
 
     return 0;
 }
+
+EXAMPLE OF FOR LOOP
+#include <iostream>
+using namespace std;
+int main (){
+    int a = 0;
+    
+    for (int a = 0; a <= 20 ;a++);
+        cout <<"a";
+        
+        return 0;
+}
+
+EXAMPLE OF A INFINITE FOR LOOP
+#include <iostream>
+using namespace std;
+int main (){
+    int a = 1;
+    
+    for (int a = 1; 5 <= 20 ;a++)
+        cout <<a<<endl;
+        
+        return 0;
+}
+
+
+SYNTAX FOR WHILE LOOP
+while(condition){
+  c++ statements
+  i++
+  }
+
+EXAMPLE OF WHILE LOOP
+#include <iostream>
+using namespace std;
+int main (){
+    int a = 1;
+    
+    while (a <= 7){
+        cout <<a<<endl;
+        a++;
+    }
+        
+        return 0;
+}
+EXAMPLE OF INFINITE WHILE LOOP
+#include <iostream>
+using namespace std;
+int main (){
+    int a = 1;
+    
+    while (true){
+        cout <<a<<endl;
+        a++;
+    }
+        
+        return 0;
+}
+
+SYNTAX OF DO WHILE LOOP
+do{
+  c++ statements
+  i++;
+  }while(condition);
+
+  EXAMPLE OF DO WHILE LOOP
+  #include <iostream>
+  using namespace std;
+  int main (){
+  int a = 1;
+    
+    do {
+        cout <<a<<endl;
+        a++;
+    }while (a <= 7);
+        
+        return 0;
+  }
+
+  EXAMPLE OF INFINITE DO WHILE LOOP
+  #include <iostream>
+  using namespace std;
+  int main (){
+      int a = 1;
+    
+    do {
+        cout <<a<<endl;
+        a++;
+    }while (false);
+        
+        return 0;
+}
+
+TABLE OF 6 USING DO WHILE LOOP
+#include <iostream>
+using namespace std;
+int main (){
+    int a = 1;
+    
+    do {
+        cout <<"6 * " <<a<< " = " <<a*6<<endl;
+        a++;
+    }while (a<=10);
+        
+        return 0;
+}
+
+
+
+
+
+  
