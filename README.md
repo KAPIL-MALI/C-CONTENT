@@ -13,7 +13,7 @@ C++ CONTENT
 11.LINE NO.299 = MANIPULATORS setw -> (iomanip)
 12.LINE NO.326 = OPERATOR PRESEDENCE AND ASSOCIATIVITY
 13.LINE NO.369 = CONTROL STATEMENTS(TYPES AND DIFFERENCE BETWEEN if-else and switch case statements)
-
+14.LINE NO.388 = TYPES OF LOOPS 
 
 
 
@@ -380,3 +380,30 @@ THEY ARE OF THREE TYPES
 DIFFERENCE BETWEEN if-else and switch case statements
 if-else: Use for complex or range-based conditions; it's highly flexible but can become less readable with complexity.
 switch: Use for distinct values of a single variable; it's efficient and readable for well-defined cases but lacks the flexibility of if-else.
+
+
+
+
+
+*******************************************************************************SYNTAX FOR for-loop **************************************************************************
+THERE ARE THREE TYPES OF LOOPS 
+1.FOR LOOP
+2.WHILE LOOP
+3.DO WHILE LOOP
+
+/* for (initialization ; condition ; operation){
+       loop body (c++ code) */
+       
+#include <iostream>
+using namespace std;
+int main (){
+    
+    int a = 1;
+    
+    for (a = 1; a <= 40; a++){
+        cout <<a<<endl;
+    }
+    
+
+    return 0;
+}
