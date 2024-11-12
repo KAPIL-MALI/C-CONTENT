@@ -385,15 +385,17 @@ switch: Use for distinct values of a single variable; it's efficient and readabl
 
 
 
-*******************************************************************************SYNTAX FOR for-loop **************************************************************************
+*******************************************************************************TYPES OF LOOPS********************************************************************************
 THERE ARE THREE TYPES OF LOOPS 
 1.FOR LOOP
 2.WHILE LOOP
 3.DO WHILE LOOP(it is the loop which works at least once)
 
+SYNTAX FOR FOR LOOP
 /* for (initialization ; condition ; operation){
        loop body (c++ code) */
-       
+
+EXAMPLE OF FOR LOOP       
 #include <iostream>
 using namespace std;
 int main (){
