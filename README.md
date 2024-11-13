@@ -14,7 +14,7 @@ C++ CONTENT
 12.LINE NO.326 = OPERATOR PRESEDENCE AND ASSOCIATIVITY
 13.LINE NO.369 = CONTROL STATEMENTS(TYPES AND DIFFERENCE BETWEEN if-else and switch case statements)
 14.LINE NO.388 = TYPES OF LOOPS(ALL THREE NICELY EXPLAINED)
-
+15.LINE NO.523 = BREAK AND CONTINUE STATEMENT WITH A LITTLE STRANGE NOTE.
 
 
 
@@ -520,4 +520,57 @@ int main (){
 
 
 
-  
+BREAK AND CONTINUE STATEMENT
+#include <iostream>
+using namespace std;
+int main (){
+    
+    int a = 1;
+    for (int a = 1; a <= 10; a++){
+        cout << a<<endl;
+        if(a == 5)
+        break;
+    }
+    return 0;
+}
+OUTPUT
+1
+2
+3
+4
+5
+
+#include <iostream>
+using namespace std;
+int main (){
+    
+    int a = 1;
+    for (int a = 1; a <= 10; a++){
+        if(a == 5)
+        break;
+        cout << a<<endl;
+
+    }
+    return 0;
+}
+OUTPUT 
+1
+2
+3
+4
+NOTE:IF YOU WRITE THE CODE OF BREAK LIKE CONTINUE THEN YOU WILL RECIEVE ONE LESS NUMBER.
+
+#include <iostream>
+using namespace std;
+int main (){
+    
+    int a = 1;
+    for (int a = 1; a <= 10; a++){
+        if(a == 5)
+        continue;
+        
+        cout << a<<endl;
+    }
+    return 0;
+}
+
